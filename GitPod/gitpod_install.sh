@@ -22,7 +22,7 @@ sudo apt-get install unzip -y
 
 
 # install apache tomcat
-wget https://github.com/kunaljaykam/kj-sakai/raw/main/sakai-gitpod-template/tomcat9.zip
+wget https://github.com/kunaljaykam/sakai_install/raw/main/GitPod/tomcat9.zip
 
 unzip tomcat9.zip
 
