@@ -2,7 +2,7 @@
 # Sakai Gitpod configuration file
 tasks:
   - name: "Sakai Dev Environment"
-  - command: "sh ./gitpod-scripts.sh"
+  - command: "sh ./gitpod_install.sh"
 
 
 

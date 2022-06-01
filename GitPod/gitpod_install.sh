@@ -50,6 +50,9 @@ rm -rf /workspace/sakai/.gitpod.yml
 # download the modified .gitpod.yml file for sakai
 wget https://raw.githubusercontent.com/kunaljaykam/sakai_install/main/GitPod/.gitpod.yml
 
+# download the gitpod scipts
+wget https://raw.githubusercontent.com/kunaljaykam/sakai_install/main/GitPod/gitpod_install.sh
+
 
 # Finally, start the tomcat
 cd ~/tomcat9
