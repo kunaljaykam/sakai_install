@@ -1,8 +1,6 @@
 # we need to install "unzip" to un-zip the zip files
 sudo apt-get install unzip -y
 
-# files needed for gitpod
-wget 
 
 # install maridb
 sudo apt-get update -y
@@ -45,6 +43,19 @@ chmod +x tomcat9/bin/*.sh
 cd /workspace/sakai
 
 mvn clean install -Dmaven.test.skip=true -T 4C -Dmaven.tomcat.home=/home/gitpod/tomcat9 -Dsakai.home=/home/gitpod/ sakai:deploy
+
+# files needed for gitpod
+wget https://github.com/kunaljaykam/sakai_install/raw/main/GitPod/.vscode.zip
+
+unzip .vscode.zip
+
+rm .vscode.zip
+
+wget https://github.com/kunaljaykam/sakai_install/raw/main/GitPod/.gitpod.yml.zip
+
+unzip .gitpod.yml.zip
+
+rm .gitpod.yml.zip
 
 
 # Finally, start the tomcat
