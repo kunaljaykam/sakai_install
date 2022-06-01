@@ -1,0 +1,24 @@
+---
+# Sakai Gitpod configuration file
+tasks:
+  - name: "Sakai Dev Environment"
+  - command: "sh ./gitpod-scripts.sh"
+
+
+
+
+# VS Code Extesnsions to make your life easier
+vscode:
+    extensions:
+      - cweijan.vscode-mysql-client2
+
+      - sodatea.velocity
+
+      - eamodio.gitlens
+
+      - vscjava.vscode-java-pack
+
+# Open port
+ports:
+  - port: 8080
+    onOpen: open-preview

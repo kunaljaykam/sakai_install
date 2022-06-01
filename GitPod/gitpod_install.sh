@@ -1,7 +1,3 @@
-# we need to install "unzip" to un-zip the zip files
-sudo apt-get install unzip -y
-
-
 # install maridb
 sudo apt-get update -y
 sudo apt-get install mariadb-server -y
@@ -19,13 +15,10 @@ sudo mysql -uroot -Bse  "create database sakaidb  default character set utf8; cr
 # create sakai.properties in home directory
 cd
 
-wget https://github.com/kunaljaykam/kj-sakai/raw/main/sakai-gitpod-template/sakai.properties.zip
+wget https://raw.githubusercontent.com/kunaljaykam/sakai_install/main/GitPod/sakai.properties
 
-
-unzip sakai.properties.zip
-
-# we don't need the zip file anymore
-rm sakai.properties.zip
+# we need to install "unzip" to un-zip the zip files
+sudo apt-get install unzip -y
 
 
 # install apache tomcat
@@ -51,11 +44,11 @@ unzip .vscode.zip
 
 rm .vscode.zip
 
-wget https://github.com/kunaljaykam/sakai_install/raw/main/GitPod/.gitpod.yml.zip
+# delete .gitpod.yml file sakai directory, if it exists
+rm -rf /workspace/sakai/.gitpod.yml
 
-unzip .gitpod.yml.zip
-
-rm .gitpod.yml.zip
+# download the modified .gitpod.yml file for sakai
+wget https://raw.githubusercontent.com/kunaljaykam/sakai_install/main/GitPod/.gitpod.yml
 
 
 # Finally, start the tomcat
