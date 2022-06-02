@@ -8,6 +8,7 @@ After opening your sakai branch(any branch) on gitpod, restart the terminal and 
 curl -fsSL https://raw.githubusercontent.com/kunaljaykam/sakai_install/main/GitPod/gitpod_install.sh | sh
 ```
 To install sakai master brach click below:
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Sakai-Codespace/sakai)
 
 
